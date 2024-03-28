@@ -21,14 +21,14 @@ public class StudentControler {
 	Main_poster_repo mainPosterRepo;
 	//get all the students 
 	//localhost:8080/students
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "https://mybinge-54310.web.app")
 	@GetMapping("/students")
 	public List<Student> getAllStudents(){
 		 List<Student> students = repo.findAll();
 		  return students;
 	}
 
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "https://mybinge-54310.web.app")
 	@GetMapping("/mainPoster")
 	public List<main_poster> getmainPoster(){
 		List<main_poster> students = mainPosterRepo.findAll();
